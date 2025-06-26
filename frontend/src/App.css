@@ -1,0 +1,208 @@
+/* src/Homepage.css */
+
+.homepage {
+  font-family: sans-serif;
+}
+
+.hero {
+  background: linear-gradient(to bottom right, #e0f2fe, #ccfbf1);
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.badge {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #7c3aed;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.headline {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.headline .blue {
+  color: #3b82f6;
+}
+
+.headline .pink {
+  color: #ec4899;
+}
+
+.subtext {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 24px;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: none;
+}
+
+.primary {
+  background-color: #ec4899;
+  color: white;
+}
+
+.secondary {
+  border: 2px solid #ccc;
+  background: transparent;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.stat-number {
+  font-size: 2rem;
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.features,
+.help {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f0fdf4;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-subtext {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #666;
+}
+
+.features-grid,
+.help-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card .icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.join {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #2563eb, #9333ea, #059669);
+  color: white;
+}
+
+.join .btn.white {
+  background: white;
+  color: #2563eb;
+}
+
+.join .btn.outline {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background: #1f2937;
+  color: #ccc;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+/* Navigation Container */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Section */
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  background: linear-gradient(to bottom right, #6EE7B7, #3B82F6);
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo-text .logo-name {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.logo-name.gradient-text {
+  background: linear-gradient(90deg, #6366f1, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+
