@@ -1,7 +1,34 @@
+/* App.css additions/modifications for overall layout and centering */
+.App {
+  display: flex;
+  flex-direction: column; /* Stacks Navbar and main vertically */
+  min-height: 100vh; /* Ensures the app takes at least the full viewport height */
+  width: 100vw; /* Ensures the app takes full viewport width */
+  overflow-x: hidden; /* Prevent horizontal scrollbar if any child overflows */
+}
+
+main {
+  flex-grow: 1; /* Allows the main content area to take up all available vertical space */
+  display: flex; /* Makes main a flex container */
+  justify-content: center; /* Centers its direct content (e.g., Report component's container) horizontally */
+  align-items: center; /* Centers its direct content (e.g., Report component's container) vertically */
+  width: 100%; /* Ensures main takes 100% of the width provided by .App */
+  /* Add padding to main if you want space between Navbar and content,
+     or if the content itself needs padding. */
+  /* padding: 20px; /* Example: add some padding to the main content area */
+}
+
+/* Original CSS from your provided block */
+
 /* src/Homepage.css */
 
 .homepage {
   font-family: sans-serif;
+  /* If Homepage needs to fill the entire main area, ensure it has width: 100% and height: 100% or similar */
+  width: 100%;
+  /* The min-height: 100vh on .report-page-container should be changed in Report.jsx's inline styles */
+  /* For Homepage, if it needs to fill the screen, it might need min-height: 100% or calc(100vh - navbar height) */
+  /* For now, let's assume Homepage sections handle their own height */
 }
 
 .hero {
@@ -160,6 +187,7 @@
   font-weight: bold;
   color: white;
 }
+
 /* Navigation Container */
 .nav-bar {
   display: flex;
@@ -171,6 +199,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  width: 100%; /* Ensure Navbar also takes full width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Logo Section */
@@ -204,5 +234,3 @@
   font-size: 0.85rem;
   color: #666;
 }
-
-
