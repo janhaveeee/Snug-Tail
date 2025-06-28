@@ -7,7 +7,8 @@ import Navbar from './components/Navbar'; // Assuming correct path to Navbar
 
 // Import your page components
 import Homepage from './pages/Homepage';
-import Report from './components/Report'; // Import the new Report component
+import Report from './pages/Report';
+import Admin from './pages/Admin' // Import the new Report component
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
           {/* ADDED: Route for the report page */}
           <Route path="/report" element={<Report />} />
+          <Route path="/admin" element={<Admin />} />
 
           {/* Example of another route, currently commented out */}
           {/* <Route path="/profile" element={<ProfilePage />} /> */}

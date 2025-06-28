@@ -234,3 +234,15 @@ main {
   font-size: 0.85rem;
   color: #666;
 }
+button.btn:hover {
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
