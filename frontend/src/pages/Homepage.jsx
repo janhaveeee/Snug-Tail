@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Homepage() {
   return (
@@ -13,8 +15,9 @@ export default function Homepage() {
           SnugTail uses AI to streamline animal rescue operations, match perfect adoptions, and help rescue centers save more lives through intelligent workflows.
         </p>
         <div className="button-group">
-          <button className="btn primary hover-bounce">🚨 Report Emergency</button>
-          <button className="btn secondary hover-bounce">💖 Find Your Companion</button>
+          <Link to="/report"><button className="btn primary hover-bounce">🚨 Report Emergency</button></Link>
+          <Link to="/adopt"><button className="btn secondary hover-bounce">💖 Find Your Companion</button></Link>
+
         </div>
       </section>
 
@@ -47,11 +50,11 @@ export default function Homepage() {
       {/* How You Can Help Section */}
       <section className="help fade-in">
         <h2 className="section-title">How Can You Help? 🤝</h2>
-        <div className="help-grid">
-          <HelpCard title="Report Animal" emoji="🆘" desc="Found an animal in need? Report it immediately" />
-          <HelpCard title="Volunteer" emoji="🙋‍♀️" desc="Join our rescue and care operations" />
-          <HelpCard title="Adopt" emoji="💞" desc="Find your perfect companion" />
-          <HelpCard title="Admin" emoji="📊" desc="Manage rescue operations" />
+        <div className="help-grid">         
+          <Link to="/report"><HelpCard title="Report Animal" emoji="🆘" desc="Found an animal in need? Report it immediately" /></Link>
+          <Link to="/volunteer"><HelpCard title="Volunteer" emoji="🙋‍♀️" desc="Join our rescue and care operations" /></Link>
+          <Link to="/adopt"><HelpCard title="Adopt" emoji="💞" desc="Find your perfect companion" /></Link>
+          <Link to="/admin"><HelpCard title="Admin" emoji="📊" desc="Manage rescue operations" /></Link>
         </div>
       </section>
 
@@ -74,15 +77,15 @@ export default function Homepage() {
         <div className="footer-col">
           <h3>Quick Actions</h3>
           <ul>
-            <li>🚨 Report Animal</li>
-            <li>💝 Browse Adoptions</li>
-            <li>🙋‍♀️ Volunteer</li>
+            <li><Link to="/report">🚨 Report Animal</Link></li>
+            <li><Link to="/adopt">💝 Browse Adoptions</Link></li>
+            <li><Link to="/volunteer">🙋‍♀️ Volunteer</Link></li>
           </ul>
         </div>
         <div className="footer-col">
           <h3>Platform</h3>
           <ul>
-            <li>📊 Dashboard</li>
+            <li><Link to="/admin">📊 Dashboard</Link></li>
             <li>📈 Analytics</li>
             <li>🧬 API</li>
           </ul>
